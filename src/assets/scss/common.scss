@@ -1,6 +1,21 @@
+@import './variables.scss';
+
 *{
     padding: 0;
     bottom: 0;
     box-sizing: border-box;
 }
 
+body{
+    max-width: 1920px;
+    background-color: $background-dark-blue;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
