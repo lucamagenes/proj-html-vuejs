@@ -30,10 +30,10 @@
       </div>
       <div class="btn-group">
         <div class="read-more">
-          <button class="btn">READ MORE</button>
+          <button class="btn btn-green">READ MORE</button>
         </div>
         <div class="play-btn">
-          <button>PLAY</button>
+          <button>Py</button>
         </div>
       </div>
     </div>
@@ -71,6 +71,7 @@ export default {
       }
       a:hover {
         color: $text-primry;
+        font-weight: 500;
       }
     }
   }
@@ -95,7 +96,7 @@ export default {
     .title {
       color: $text-primry;
       h1 {
-        font-size: 95px;
+        font-size: 100px;
         line-height: 80px;
       }
     }
@@ -105,17 +106,17 @@ export default {
 
       .read-more {
         margin-right: 2rem;
-        button {
-          background-color: $button-green;
-        }
       }
       .play-btn {
         button {
           padding: 1rem;
-          border: 1px solid white;
           color: $text-green;
           background-color: transparent;
+          border: 1px solid white;
           border-radius: 100%;
+        }
+        button:hover {
+          color: $button-red;
         }
       }
     }

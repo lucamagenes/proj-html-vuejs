@@ -1,5 +1,7 @@
 @import './variables.scss';
 
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -9,6 +11,8 @@
 body{
     max-width: 1920px;
     background-color: $background-dark-blue;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 400;
 }
 
 .d-flex{
@@ -20,7 +24,34 @@ body{
     margin: auto;
 }
 
+.col-6{
+    width: calc(100% / 2);
+}
+
+button{
+    cursor: pointer;
+}
+
 .btn{
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     border: none;
+}
+
+.btn-green{
+    background-color: $button-green;
+}
+
+.btn-green:hover{
+    background-color: $button-red;
+    color: white;
+}
+
+.btn-red{
+    background-color: $button-red;
+    color: white;
+}
+
+.btn-red:hover{
+    background-color: $button-hover-red;
+    color: white;
 }
