@@ -13,9 +13,9 @@
         </div>
       </div>
     </div>
-    <div class="btn-group d-flex" v-show="visible">
+    <div class="btn-group d-flex" v-show="visible > 800">
       <div class="up">
-        <a href="#" @click="moveUp">
+        <a href="#home" v-smooth-scroll>
           <font-awesome-icon
             :icon="['fas', 'long-arrow-alt-up']"
             class="icon"
@@ -23,7 +23,7 @@
         </a>
       </div>
       <div class="message">
-        <a href="#">
+        <a href="">
           <font-awesome-icon :icon="['far', 'comment']" class="icon" />
         </a>
       </div>
@@ -36,27 +36,19 @@ import FooterTop from "./FooterTop.vue";
 export default {
   data() {
     return {
-      visible: false,
+      visible: 0,
     };
   },
   components: {
     FooterTop,
   },
   methods: {
-    moveUp() {
-      window.scroll({
-        top: 0,
-      });
-    },
     scrollListener() {
-      this.visible = window.scrollY > 800;
+      this.visible = window.scrollY;
     },
   },
   mounted() {
     window.addEventListener("scroll", this.scrollListener);
-  },
-  beforeDestroy() {
-    window.removeEventListener("scroll", this.scrollListener);
   },
 };
 </script>

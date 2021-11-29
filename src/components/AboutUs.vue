@@ -70,7 +70,7 @@ export default {};
       .green-line {
         width: 45px;
         height: 1px;
-        border: 1px solid #35ffbf;
+        border: 1px solid #ffc318;
         margin-right: 1rem;
       }
       p {

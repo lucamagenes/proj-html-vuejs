@@ -117,7 +117,7 @@ export default {
       align-items: center;
       .green-line {
         width: 75%;
-        border: 1px solid #39ffbf;
+        border: 1px solid #ffc318;
       }
     }
   }

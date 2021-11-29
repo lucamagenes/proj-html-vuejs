@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <div id="home" class="hero">
     <header>
       <nav class="container d-flex">
         <div class="logo">
@@ -89,7 +89,7 @@ export default {
       .green-line {
         width: 45px;
         height: 1px;
-        border: 1px solid #35ffbf;
+        border: 1px solid #ffc318;
         margin-right: 1rem;
       }
       p {

@@ -6,7 +6,7 @@
         <div class="desc">{{ item.description }}</div>
       </div>
       <div class="add">
-        <p>più</p>
+        <font-awesome-icon :icon="['fas', 'plus']" class="icon" />
       </div>
     </div>
   </div>
@@ -63,6 +63,7 @@ export default {
       text-align: center;
       background-color: $background-dark-blue;
       color: white;
+      cursor: pointer;
       p {
         vertical-align: middle;
       }

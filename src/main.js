@@ -12,10 +12,15 @@ import { faLongArrowAltUp } from '@fortawesome/free-solid-svg-icons'
 import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
 import { faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons'
 import { faPlay } from '@fortawesome/free-solid-svg-icons'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faTwitter, faInstagram, faLinkedinIn, faFacebookF, faComment, faLongArrowAltUp, faLongArrowAltRight, faLongArrowAltLeft, faPlay)
+library.add(faTwitter, faInstagram, faLinkedinIn, faFacebookF, faComment, faLongArrowAltUp, faLongArrowAltRight, faLongArrowAltLeft, faPlay, faPlus)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
+
+import VueSmoothScroll from 'vue2-smooth-scroll'
+Vue.use(VueSmoothScroll)
+
 
 Vue.config.productionTip = false
 
