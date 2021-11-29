@@ -70,7 +70,7 @@ export default {
         color: $text-not-hover;
       }
       a:hover {
-        color: $text-primry;
+        color: $text-primary;
         font-weight: 500;
       }
     }
@@ -89,12 +89,12 @@ export default {
         margin-right: 1rem;
       }
       p {
-        color: $text-primry;
+        color: $text-primary;
         vertical-align: baseline;
       }
     }
     .title {
-      color: $text-primry;
+      color: $text-primary;
       h1 {
         font-size: 100px;
         line-height: 80px;
