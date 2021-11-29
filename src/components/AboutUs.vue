@@ -74,12 +74,12 @@ export default {};
         margin-right: 1rem;
       }
       p {
-        color: $text-primry;
+        color: $text-primary;
         vertical-align: baseline;
       }
     }
     .title {
-      color: $text-primry;
+      color: $text-primary;
       margin-bottom: 2rem;
       h2 {
         font-size: 60px;
