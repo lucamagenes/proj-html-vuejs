@@ -14,10 +14,20 @@
         </div>
         <div class="buttons">
           <div class="next">
-            <button>next</button>
+            <button>
+              <font-awesome-icon
+                :icon="['fas', 'long-arrow-alt-left']"
+                class="icon"
+              />
+            </button>
           </div>
           <div class="prev">
-            <button>prev</button>
+            <button>
+              <font-awesome-icon
+                :icon="['fas', 'long-arrow-alt-right']"
+                class="icon"
+              />
+            </button>
           </div>
         </div>
       </div>

@@ -35,7 +35,9 @@
           <button class="btn btn-green">READ MORE</button>
         </div>
         <div class="play-btn">
-          <button>Py</button>
+          <button>
+            <font-awesome-icon :icon="['fas', 'play']" class="icon" />
+          </button>
         </div>
       </div>
     </div>

@@ -16,10 +16,27 @@
           <a href="">CONTACT</a>
         </div>
         <div class="icons">
-          <a href="">INSTAGRAM</a>
-          <a href="">LINKEDIN</a>
-          <a href="">FACEBOOK</a>
-          <a href="">TWITTER</a>
+          <a href="">
+            <font-awesome-icon
+              :icon="['fab', 'instagram']"
+              class="social_icon"
+            />
+          </a>
+          <a href="">
+            <font-awesome-icon
+              :icon="['fab', 'linkedin-in']"
+              class="social_icon"
+            />
+          </a>
+          <a href="">
+            <font-awesome-icon
+              :icon="['fab', 'facebook-f']"
+              class="social_icon"
+            />
+          </a>
+          <a href="">
+            <font-awesome-icon :icon="['fab', 'twitter']" class="social_icon" />
+          </a>
         </div>
       </div>
     </div>

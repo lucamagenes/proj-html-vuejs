@@ -13,12 +13,19 @@
         </div>
       </div>
     </div>
-    <div class="btn-group d-flex">
+    <div class="btn-group d-flex" v-show="visible">
       <div class="up">
-        <a href="#">UP</a>
+        <a href="#" @click="moveUp">
+          <font-awesome-icon
+            :icon="['fas', 'long-arrow-alt-up']"
+            class="icon"
+          />
+        </a>
       </div>
       <div class="message">
-        <a href="#">MSG</a>
+        <a href="#">
+          <font-awesome-icon :icon="['far', 'comment']" class="icon" />
+        </a>
       </div>
     </div>
   </footer>
@@ -27,8 +34,29 @@
 <script>
 import FooterTop from "./FooterTop.vue";
 export default {
+  data() {
+    return {
+      visible: false,
+    };
+  },
   components: {
     FooterTop,
+  },
+  methods: {
+    moveUp() {
+      window.scroll({
+        top: 0,
+      });
+    },
+    scrollListener() {
+      this.visible = window.scrollY > 800;
+    },
+  },
+  mounted() {
+    window.addEventListener("scroll", this.scrollListener);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.scrollListener);
   },
 };
 </script>
@@ -37,7 +65,6 @@ export default {
 @import "../assets/scss/common.scss";
 footer {
   color: $text-footer;
-  position: relative;
   hr {
     border-color: #787887;
   }
@@ -59,9 +86,9 @@ footer {
     }
   }
   .btn-group {
-    position: absolute;
+    position: fixed;
     right: 0;
-    bottom: 0;
+    bottom: 3rem;
     padding-right: 0.5rem;
     gap: 0.5rem;
     align-items: center;
