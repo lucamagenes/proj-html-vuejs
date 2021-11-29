@@ -3,11 +3,13 @@
     <header>
       <nav class="container d-flex">
         <div class="logo">
-          <img
-            src="../assets/img/logotype.png"
-            alt="logo-brand-name"
-            height="20"
-          />
+          <a href="#">
+            <img
+              src="../assets/img/logotype.png"
+              alt="logo-brand-name"
+              height="20"
+            />
+          </a>
         </div>
         <div class="right d-flex">
           <div class="navLink" v-for="link in navLink" :key="link">
